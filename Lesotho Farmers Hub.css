@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #90ee90;
+}
+
+.header {
+    background-image: url("background.jpg");
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.nav {
+    background-color: #32cd32;
+    padding: 10px;
+    text-align: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 8px 16px;
+    background-color: #006400;
+    border-radius: 5px;
+}
+
+.nav a:hover {
+    background-color: #004000;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page {
+    display: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.page.active {
+    display: block;
+}
+
+.farmer-category {
+    border: 2px solid #90ee90;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f0fff0;
+}
+
+.product {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.contact-info {
+    background-color: #e6ffe6;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #228b22;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #006400;
+}
+
+.tip-box {
+    background-color: #fffacd;
+    border-left: 4px solid #ffd700;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+h1 {
+    color: #006400;
+}
+
+h2 {
+    color: #228b22;
+    border-bottom: 2px solid #90ee90;
+    padding-bottom: 5px;
+}
+
+.footer {
+    background-color: #228b22;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .nav a {
+        display: block;
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .farmer-category {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+    
+    .nav {
+        padding: 5px;
+    }
+    
+    .nav a {
+        font-size: 14px;
+        padding: 6px 10px;
+        margin: 3px 0;
+    }
+    
+    .container {
+        padding: 5px;
+    }
+    
+    .page {
+        padding: 10px;
+    }
+    
+    .farmer-category, .product, .tip-box {
+        margin: 5px 0;
+        padding: 8px;
+    }
+}
